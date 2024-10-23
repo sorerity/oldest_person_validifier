@@ -1,4 +1,10 @@
-oldest_person_validifier
+oldest_person_validifier = {}
+
+while True:
+    while True:
+        try:
+            name = input("Please input your name: ")
+            age = input("Please input your age: ")
 
 
 
