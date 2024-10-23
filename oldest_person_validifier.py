@@ -4,7 +4,13 @@ while True:
     while True:
         try:
             name = input("Please input your name: ")
-            age = input("Please input your age: ")
+            age = int(input("Please input your age: "))
+            if age >= 110: print("Error")
+        except:
+            print("Error.")
+            break
+
+
 
 
 
@@ -54,4 +60,4 @@ while True:
 #    if successful, put user inputs into an array
 #        ask user if they want to input another entry
 #            if yes, return loop 1
-#            if no, print name and age of the oldest person
+# if no, print name and age of the oldest person
