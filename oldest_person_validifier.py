@@ -5,15 +5,27 @@ while True:
         try:
             name = input("Please input your name: ")
             age = int(input("Please input your age: "))
-            if age >= 110: print("Error.")
+            if age >= 110: 
+                print("Error.")
+                continue
 
-            oldest_person_validifier [name] = {
+            oldest_person_validifier[name] = {
+                "Name": name,
                 "Age" : age,
             }
-            
+
+            print(oldest_person_validifier[name]["Age"])
+
+            retry = input("Retry? Y/N:  ")
+            break
         except:
             print("Error.")
+            
+    if retry == "N":
             break
+    elif retry != "Y":
+        print("Invalid")
+
 
 
 
