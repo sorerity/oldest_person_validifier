@@ -5,10 +5,16 @@ while True:
         try:
             name = input("Please input your name: ")
             age = int(input("Please input your age: "))
-            if age >= 110: print("Error")
+            if age >= 110: print("Error.")
+
+            oldest_person_validifier [name] = {
+                "Age" : age,
+            }
+            
         except:
             print("Error.")
             break
+
 
 
 
