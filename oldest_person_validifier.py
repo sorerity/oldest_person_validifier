@@ -28,7 +28,7 @@ while True:
             retry = input("Do you want to input another entry? Y/N:  ")
             break
         except:
-            print("Error.")
+            print("Error, age should not contain letters.")
             
     if retry == "N":
         if list:
