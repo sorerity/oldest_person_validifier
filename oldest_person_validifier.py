@@ -26,13 +26,16 @@ while True:
             print("Error.")
             
     if retry == "N":
-            break
+            print(f"The oldest person is {oldest_person['Name']} with the age of {oldest_person['Age']}.")
     elif retry != "Y":
         print("Invalid")
 
     if list:
         oldest_person = list[0]
-
+    
+    for person in list:
+        if person["Age"] > oldest_person["Age"]:
+            oldest_person = person
 
 
 
