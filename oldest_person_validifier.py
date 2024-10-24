@@ -30,6 +30,8 @@ while True:
     elif retry != "Y":
         print("Invalid")
 
+    if list:
+        oldest_person = list[0]
 
 
 
