@@ -1,4 +1,4 @@
-oldest_person_validifier = {}
+list = []
 
 while True:
     while True:
@@ -6,7 +6,7 @@ while True:
             name = input("Please input your name: ")
             age = int(input("Please input your age: "))
 
-            if age >= 110: 
+            if age <= 0 or age >= 110: 
                 print("Error, Please input proper age.")
                 continue
 
@@ -15,10 +15,12 @@ while True:
                 "Age" : age,
             }
 
-            print("Name: " oldest_person_validifier["Name"])
+            list.append(oldest_person_validifier)
+
+            print(oldest_person_validifier["Name"])
             print(oldest_person_validifier["Age"])
 
-            retry = input("Retry? Y/N:  ")
+            retry = input("Do you want to input another entry? Y/N:  ")
             break
         except:
             print("Error.")
