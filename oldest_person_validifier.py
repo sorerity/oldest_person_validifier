@@ -4,6 +4,11 @@ while True:
     while True:
         try:
             name = input("Please input your name: ")
+        
+            if not name.isalpha():
+                print("Error, Name should not contain numbers.")
+                continue
+
             age = int(input("Please input your age: "))
 
             if age <= 0 or age >= 110: 
@@ -39,7 +44,8 @@ while True:
         break
 
     elif retry != "Y":
-        print("Invalid")
+        print("Invalid input, stopping the program.")
+        break
 
 
 
